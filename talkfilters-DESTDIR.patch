@@ -1,31 +1,15 @@
---- Makefile.in~	Thu Dec 31 23:08:48 1998
-+++ Makefile.in	Tue Nov 26 20:27:30 2002
-@@ -36,7 +36,7 @@
- bindir = ${exec_prefix}/bin
- binprefix = 
+--- Makefile.am~	2004-01-07 01:47:44.000000000 +0100
++++ Makefile.am	2004-06-28 17:53:29.000000000 +0200
+@@ -85,10 +85,10 @@
+ EXTRA_DIST = $(man1_MANS) $(gaim_plugin)
  
--mandir = ${prefix}/man/man${manext}
-+mandir = ${prefix}/share/man/man${manext}
- manext = 1
- manprefix = 
- 
-@@ -100,14 +100,14 @@
- 	rm -f ref.man
- 	echo ".so man${manext}/talkfilters.${manext}" > ref.man
- 	${INSTALL_DATA} ${srcdir}/talkfilters.man \
--		${mandir}/${manprefix}/talkfilters.${manext}; \
-+		$(DESTDIR)${mandir}/${manprefix}/talkfilters.${manext}; \
- 	for i in $(FILTERS); do \
--		${INSTALL_PROGRAM} $$i ${bindir}/${binprefix}$$i; \
-+		${INSTALL_PROGRAM} $$i $(DESTDIR)${bindir}/${binprefix}$$i; \
- 		${INSTALL_DATA} ${srcdir}/ref.man \
--			${mandir}/${manprefix}$$i.${manext}; \
--	${INSTALL_PROGRAM} wrap ${bindir}/${binprefix}wrap; \
-+			$(DESTDIR)${mandir}/${manprefix}$$i.${manext}; \
-+	${INSTALL_PROGRAM} wrap $(DESTDIR)${bindir}/${binprefix}wrap; \
- 	${INSTALL_DATA} ${srcdir}/wrap.man \
--		${mandir}/${manprefix}wrap.${manext}; \
-+		$(DESTDIR)${mandir}/${manprefix}wrap.${manext}; \
+ install-data-hook:
+-	cd $(mandir)/man1; \
++	cd $(DESTDIR)$(mandir)/man1; \
+ 	for i in $(filters); do \
+ 		rm -f $$i.1; \
+-		ln -s $(filter_man).1 $$i.1; \
++		echo ".so $(filter_man).1" > $$i.1; \
  	done
  
- uninstall:
+ # eof
