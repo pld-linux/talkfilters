@@ -7,8 +7,8 @@ License:	GPL
 Group:		Applications/Text
 Source0:	http://www.dystance.net/software/talkfilters/%{name}-%{version}.tar.gz
 # Source0-md5:	e5f773423979f845c42f7f777e1b8916
-Url:		http://www.dystance.net/software/talkfilters/	
 Patch0:		%{name}-DESTDIR.patch
+URL:		http://www.dystance.net/software/talkfilters/	
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	flex
@@ -34,7 +34,8 @@ Zestaw narzêdzi do przetwarzania tekstu.
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_mandir}/man1,%{_bindir}}
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
