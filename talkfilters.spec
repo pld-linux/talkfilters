@@ -2,7 +2,7 @@ Summary:	GNU Talk filters
 Summary(pl):	Filtry tekstowe GNU
 Name:		talkfilters
 Version:	2.3.2
-Release:	1
+Release:	2
 License:	GPL
 Group:		Applications/Text
 Source0:	http://www.dystance.net/software/talkfilters/%{name}-%{version}.tar.gz
@@ -25,6 +25,7 @@ Zestaw narzêdzi do przetwarzania tekstu.
 %patch0 -p0
 
 %build
+cp -f /usr/share/automake/config.sub .
 %{__aclocal}
 %{__autoconf}
 %configure
