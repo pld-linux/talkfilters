@@ -7,8 +7,9 @@ License:	GPL
 Group:		Applications/Text
 Source0:	ftp://ftp.gnu.org/pub/gnu/non-gnu/talkfilters/%{name}-%{version}.tar.gz
 Patch0:		%{name}-DESTDIR.patch
-BuildRequires:	flex
 BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	flex
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -30,6 +31,7 @@ Zestaw narzêdzi do przetwarzania tekstu.
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_mandir}/man1,%{_bindir}}
+
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
 %clean
