@@ -8,6 +8,7 @@ Group:		Applications/Text
 Source0:	ftp://ftp.gnu.org/pub/gnu/non-gnu/talkfilters/%{name}-%{version}.tar.gz
 Patch0:		%{name}-DESTDIR.patch
 BuildRequires:	flex
+BuildRequires:	autoconf
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
