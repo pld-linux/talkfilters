@@ -6,6 +6,7 @@ Release:	1
 License:	GPL
 Group:		Applications/Text
 Source0:	ftp://ftp.gnu.org/pub/gnu/non-gnu/talkfilters/%{name}-%{version}.tar.gz
+# Source0-md5:	76ec0ed756f94fa2fc37b94507be1cc1
 Patch0:		%{name}-DESTDIR.patch
 BuildRequires:	autoconf
 BuildRequires:	automake
