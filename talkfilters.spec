@@ -5,7 +5,7 @@ Version:	1.0
 Release:	1
 License:	GPL
 Group:		Applications/Text
-Source0:	http://www.netsw.org/hacker/misc/talkfilters/%{name}-%{version}.tar.gz
+Source0:	ftp://ftp.gnu.org/pub/gnu/non-gnu/talkfilters/%{name}-%{version}.tar.gz
 BuildRequires:	flex
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
