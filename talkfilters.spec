@@ -1,12 +1,13 @@
 Summary:	GNU Talk filters
 Summary(pl):	Filtry tekstowe GNU
 Name:		talkfilters
-Version:	1.0
+Version:	2.3.2
 Release:	1
 License:	GPL
 Group:		Applications/Text
-Source0:	ftp://ftp.gnu.org/pub/gnu/non-gnu/talkfilters/%{name}-%{version}.tar.gz
-# Source0-md5:	76ec0ed756f94fa2fc37b94507be1cc1
+Source0:	http://www.dystance.net/software/talkfilters/%{name}-%{version}.tar.gz
+# Source0-md5:	e5f773423979f845c42f7f777e1b8916
+Url:		http://www.dystance.net/software/talkfilters/	
 Patch0:		%{name}-DESTDIR.patch
 BuildRequires:	autoconf
 BuildRequires:	automake
