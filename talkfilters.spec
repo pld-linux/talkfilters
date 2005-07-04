@@ -57,4 +57,4 @@ rm -rf $RPM_BUILD_ROOT
 %doc README
 %attr(755,root,root) %{_bindir}/*
 %{_mandir}/man?/*
-%{_infodir}/*
+%{_infodir}/*.info*
