@@ -11,7 +11,7 @@ Group:		Applications/Text
 Source0:	http://www.dystance.net/software/talkfilters/%{name}-%{version}.tar.gz
 # Source0-md5:	58048954f867628f098bc4f09f9672ad
 Patch0:		%{name}-DESTDIR.patch
-URL:		http://www.dystance.net/software/talkfilters/	
+URL:		http://www.dystance.net/software/talkfilters/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	flex
