@@ -2,7 +2,7 @@
 # - add libraries
 # - dynamic linking with libraries?
 Summary:	GNU Talk filters
-Summary(pl):	Filtry tekstowe GNU
+Summary(pl.UTF-8):   Filtry tekstowe GNU
 Name:		talkfilters
 Version:	2.3.4
 Release:	1
@@ -21,8 +21,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Set of filters to text processing.
 
-%description -l pl
-Zestaw narzêdzi do przetwarzania tekstu.
+%description -l pl.UTF-8
+Zestaw narzÄ™dzi do przetwarzania tekstu.
 
 %prep
 %setup -q
