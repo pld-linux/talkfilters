@@ -2,7 +2,7 @@
 # - add libraries
 # - dynamic linking with libraries?
 Summary:	GNU Talk filters
-Summary(pl.UTF-8):   Filtry tekstowe GNU
+Summary(pl.UTF-8):	Filtry tekstowe GNU
 Name:		talkfilters
 Version:	2.3.4
 Release:	1
