@@ -4,14 +4,13 @@
 Summary:	GNU Talk filters
 Summary(pl.UTF-8):	Filtry tekstowe GNU
 Name:		talkfilters
-Version:	2.3.4
+Version:	2.3.8
 Release:	1
 License:	GPL
 Group:		Applications/Text
-Source0:	http://www.dystance.net/software/talkfilters/%{name}-%{version}.tar.gz
-# Source0-md5:	58048954f867628f098bc4f09f9672ad
-Patch0:		%{name}-DESTDIR.patch
-URL:		http://www.dystance.net/software/talkfilters/
+Source0:	http://www.hyperrealm.com/talkfilters/%{name}-%{version}.tar.gz
+# Source0-md5:	c11c6863a1c246a8d49a80a1168b54c8
+URL:		http://www.hyperrealm.com/talkfilters/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	flex
@@ -26,7 +25,6 @@ Zestaw narzędzi do przetwarzania tekstu.
 
 %prep
 %setup -q
-%patch0 -p0
 
 %build
 cp -f /usr/share/automake/config.sub .
